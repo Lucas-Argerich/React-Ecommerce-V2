@@ -17,7 +17,7 @@ const Left = styled.div`
     font-weight: 600;
     font-size: 18px;
     &.active {
-      color: #9381FF;
+      color: #9381ff;
     }
   }
 `;
@@ -28,24 +28,9 @@ export default function NavBar() {
   return (
     <Nav>
       <Left>
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "active" : undefined)}
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="shop"
-          className={({ isActive }) => (isActive ? "active" : undefined)}
-        >
-          Shop
-        </NavLink>
-        <NavLink
-          to="about-us"
-          className={({ isActive }) => (isActive ? "active" : undefined)}
-        >
-          About Us
-        </NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="shop">Shop</NavLink>
+        <NavLink to="about-us">About Us</NavLink>
       </Left>
       <Right>
         <Link to="cart">Cart</Link>
