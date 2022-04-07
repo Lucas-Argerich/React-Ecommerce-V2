@@ -44,7 +44,7 @@ export default function NavBar() {
           to="about-us"
           className={({ isActive }) => (isActive ? "active" : undefined)}
         >
-          About
+          About Us
         </NavLink>
       </Left>
       <Right>
