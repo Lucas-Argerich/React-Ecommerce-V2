@@ -15,8 +15,9 @@ const Header = styled.header`
 const MenuIcon = styled.div`
   width: 33px;
   height: 4px;
-  background: #50514f;
+  background: ${(props) => (props.deployed ? "#50514f00" : "#50514f")};
   z-index: 1;
+  transition: 500ms;
 
   &::after {
     content: "";
@@ -26,6 +27,9 @@ const MenuIcon = styled.div`
     background: #50514f;
     position: relative;
     top: 6px;
+    transform: ${(props) => props.deployed && "rotate(-45deg)"};
+    transform-origin: 10% 0;
+    transition: 500ms;
   }
 
   &::before {
@@ -36,6 +40,9 @@ const MenuIcon = styled.div`
     background: #50514f;
     position: relative;
     bottom: 10px;
+    transform: ${(props) => props.deployed && "rotate(45deg)"};
+    transform-origin: 10% 100%;
+    transition: 500ms;
   }
 `;
 
@@ -97,10 +104,11 @@ export default function NavBar() {
       {isMobile ? (
         <>
           <Header>
-            <MenuIcon onClick={() => setIsMenuDeployed(!isMenuDeployed)} />
-            <Menu
-              style={isMenuDeployed ? {} : { height: "100%" }}
-            >
+            <MenuIcon
+              deployed={isMenuDeployed}
+              onClick={() => setIsMenuDeployed(!isMenuDeployed)}
+            />
+            <Menu style={isMenuDeployed ? { height: "100%" } : {}}>
               <NavMobile>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="shop">Shop</NavLink>
