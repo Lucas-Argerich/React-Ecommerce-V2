@@ -9,3 +9,7 @@
   color: #50514F;
   text-decoration: none;
 }
+
+#root{
+  position: relative;
+}
