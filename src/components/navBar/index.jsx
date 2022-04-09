@@ -49,7 +49,7 @@ const MenuIcon = styled.div`
 const Menu = styled.div`
   width: 100%;
   height: 0;
-  background: #ffffff90;
+  background: #ffffffe5;
   position: absolute;
   left: 0;
   top: 0;
