@@ -14,6 +14,7 @@ const CartContainer = styled.div`
   position: fixed;
   bottom: 72px;
   right: 25px;
+  z-index: 2;
 
   @media (min-width: 769px) {
     background: #ffffff;

@@ -16,7 +16,7 @@ const MenuIcon = styled.div`
   width: 33px;
   height: 4px;
   background: ${(props) => (props.deployed ? "#50514f00" : "#50514f")};
-  z-index: 1;
+  z-index: 2;
   transition: 500ms;
 
   &::after {
@@ -55,6 +55,7 @@ const Menu = styled.div`
   top: 0;
   transition: 500ms;
   overflow: hidden;
+  z-index: 1;
 `;
 
 const NavMobile = styled.nav`
