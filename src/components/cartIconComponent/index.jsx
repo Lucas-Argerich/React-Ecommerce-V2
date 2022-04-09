@@ -15,7 +15,7 @@ const CartContainer = styled.div`
   bottom: 72px;
   right: 25px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 769px) {
     background: #ffffff;
     position: relative;
     bottom: 0;
@@ -27,7 +27,7 @@ const StyledCartIcon = styled(CartIcon)`
   path {
     fill: #ffffff;
 
-    @media (min-width: 426px) {
+    @media (min-width: 769px) {
       fill: #50514f;
     }
   }
@@ -42,7 +42,7 @@ const CartCounter = styled.div`
   bottom: 14px;
   left: 14px;
 
-  @media (min-width: 426px) {
+  @media (min-width: 769px) {
     background: #50514f;
   }
 `;
@@ -52,7 +52,7 @@ const CartCounterText = styled.p`
   text-align: center;
   font-weight: 600;
 
-  @media (min-width: 426px) {
+  @media (min-width: 769px) {
     color: #ffffff;
   }
 `;
