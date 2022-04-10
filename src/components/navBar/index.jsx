@@ -9,7 +9,12 @@ const Header = styled.header`
   height: 100px;
   display: flex;
   align-items: center;
+  padding: 0 10px;
+
+  @media (min-width: 375px){
   padding: 0 25px;
+  }
+  
 `;
 
 const MenuIcon = styled.div`
@@ -59,7 +64,7 @@ const Menu = styled.div`
 `;
 
 const NavMobile = styled.nav`
-  margin: 100px 25px;
+  padding: 100px 10px;
   display: flex;
   flex-direction: column;
   a {
@@ -70,6 +75,10 @@ const NavMobile = styled.nav`
     &.active {
       color: #9381ff;
     }
+  }
+
+  @media (min-width: 375px){
+  padding: 100px 25px;
   }
 `;
 

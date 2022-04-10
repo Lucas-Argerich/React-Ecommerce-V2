@@ -5,7 +5,11 @@ import imageSrc from "./assets/hoodie.png";
 import { Link } from "react-router-dom";
 
 const Main = styled.main`
+  padding: 0 10px 85px;
+
+  @media (min-width: 375px){
   padding: 0 25px 85px;
+  }
 `;
 
 const Title = styled.h1`
