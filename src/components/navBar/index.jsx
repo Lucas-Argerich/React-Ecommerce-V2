@@ -106,7 +106,7 @@ const Left = styled.div`
 const Right = styled.div``;
 
 export default function NavBar() {
-  const isTablet = useMediaQuery("(max-width:768px)");
+  const isTablet = useMediaQuery("(max-width:1023px)");
   const [isMenuDeployed, setIsMenuDeployed] = useState(false);
 
   return (
